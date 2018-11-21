@@ -24,15 +24,16 @@ function solveQuadrEq(a, b, c) {
         x2 = (-b - Math.sqrt(d) / (2 * a));
         return 'Рішення: X1=' + x1 + ', X2=' + x2;
     }
-    else if (d == 0) {
+    else if (d === 0) {
         x1 = b / 2 * a;
         return 'Рішення: X1=' + x1;
     }
     else if (d < 0)
         return ' Немає рішення. D=' + d;
 
-    function calcDiscr(a, b, c) {
-        return (b * b) - (4 * a * c);
-    }
+}
+
+function calcDiscr(a, b, c) {
+    return (b * b) - (4 * a * c);
 
 }
